@@ -1,0 +1,7 @@
+services:
+  urlwatch:
+    image: vimagick/urlwatch
+    volumes:
+      - ./data:/root/.urlwatch
+      - ./data/crontab:/etc/crontabs/root
+    restart: unless-stopped

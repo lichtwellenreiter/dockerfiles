@@ -1,0 +1,6 @@
+squid:
+  image: vimagick/squid
+  ports:
+    - "3128:3128/tcp"
+    - "3130:3130/udp"
+  restart: unless-stopped
